@@ -1,0 +1,860 @@
+/* Reset CSS  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+/* Font size of root */
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--li-a-hover);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--icon);
+  border-radius: 1rem;
+  border: 0.1rem solid rgb(0, 254, 8);
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(246, 255, 0);
+}
+/* variables for color */
+:root {
+  --container: #c4c4c3;
+  --btnbg: linear-gradient(rgb(143, 248, 108), rgb(135, 182, 247));
+  --btnbg-hover: linear-gradient(rgb(240, 240, 123), rgb(244, 134, 134));
+  --black-text: #000000;
+  --primary-heading-color: #0616ff;
+  --primary-para-color: #ff0000;
+  --icon: #e310ff;
+  --li-hover: #c5edc8;
+  --li-a-hover: #02ff13;
+  --li-active: #00d5ff;
+  --feature-box: #f7dffa;
+  --banner-bg: #6dcbf3;
+}
+/* Reusable Code In Websites Starts*/
+.grid {
+  display: grid;
+  gap: 4rem;
+}
+.grid-two-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-four-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-five-columns {
+  grid-template-columns: repeat(5, 1fr);
+}
+.container {
+  max-width: 100%;
+  background-color: var(--container);
+  padding: 6rem 0 2rem 0;
+}
+.btn {
+  padding: 1rem 2rem;
+  outline: none;
+  color: var(--black-text);
+  font-weight: 600;
+  font-size: 2.5rem;
+  border-radius: 1rem;
+  border: none;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background: var(--btnbg);
+}
+.btn:hover {
+  background: var(--btnbg-hover);
+  transform: translateY(-0.5rem);
+}
+.primary-heading {
+  color: var(--primary-heading-color);
+  font-size: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  font-weight: 800;
+  position: relative;
+}
+.primary-heading::before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  transform: translateX(100%);
+  border-bottom: 5px solid #fb0d00;
+  animation: left 2s linear infinite;
+}
+.primary-heading::after {
+  content: "";
+  width: 0%;
+  position: absolute;
+  top: 90%;
+  right: 0%;
+  transform: translateX(-100%);
+  border-bottom: 5px solid #001aff;
+  text-decoration: underline 2px solid #e310ff;
+  animation: right 2s linear infinite;
+}
+@keyframes left {
+  0% {
+    width: 0%;
+    transform: translateX(0%);
+  }
+  50% {
+    width: 50%;
+    transform: translateX(50%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+}
+@keyframes right {
+  0% {
+    width: 0%;
+    transform: translateX(0%);
+  }
+  50% {
+    width: 50%;
+    transform: translateX(50%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+}
+.blog-heading {
+  color: var(--primary-heading-color);
+  font-size: 2.7rem;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  font-weight: 800;
+}
+.primary-para {
+  color: var(--primary-para-color);
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+.blog-para {
+  color: var(--black-text);
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.bg-img-container {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  margin: 7rem 0rem 0rem 0rem;
+}
+/* Reusable Code In Websites Starts*/
+
+/* ................Home Paage CSS starts*/
+/* Header CSS starts */
+.header {
+  max-width: 100%;
+  height: 6.5rem;
+  padding: 0 4rem;
+  background-color: var(--black-text);
+  box-shadow: 1px 1px 20px 0 rgba(3, 45, 94, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.logo {
+  flex: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo h1 a {
+  font-size: 4rem;
+  font-weight: 600;
+  animation: clrchange 7s linear infinite;
+}
+.logo h1 a span:first-of-type {
+  padding: 0rem 0.3rem;
+  border: 2px solid #e6b5ed;
+  margin-right: 0.5rem;
+  color: var(--icon);
+  animation: blink 2s linear infinite;
+}
+@keyframes clrchange {
+  0% {
+    color: #02ff13;
+  }
+  25% {
+    color: #00d5ff;
+  }
+  50% {
+    color: #ffff00;
+  }
+  75% {
+    color: #ff0000;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+/* NavBar Css Starts */
+.nav {
+  flex: 4;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  z-index: 99;
+}
+.nav-li {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.nav-li a {
+  text-transform: capitalize;
+  transition: all 0.5s ease-in-out;
+  font-size: 2.2rem;
+  color: var(--li-hover);
+}
+.nav-li:hover a::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  left: 0%;
+  top: 100%;
+  height: 0.3rem;
+  border-radius: 1rem;
+  background-color: var(--icon);
+}
+
+.nav-li:hover {
+  transform: scale(1.1);
+}
+.nav-li a:hover {
+  transform: scale(1.1);
+  color: var(--li-a-hover);
+}
+.nav-li a.active {
+  font-weight: 600;
+  color: var(--li-active);
+}
+/* Navbar Css Ends */
+/* Hembergure Menu Css Starts*/
+.menu-icon {
+  display: none;
+}
+/* Hembergure Menu CssEnds*/
+/* Header CSS Ends */
+
+/* Hero Section Css Starts*/
+.hero-section {
+  max-width: 100%;
+  margin: 0rem auto;
+  animation: bg 7s linear infinite;
+}
+@keyframes bg {
+  0% {
+    background: #f49e9e;
+  }
+  25% {
+    background: #f1f371;
+  }
+  50% {
+    background: #f697ff;
+  }
+  75% {
+    background: #7ce5fa;
+  }
+  100% {
+    background: #f49e9e;
+  }
+}
+.hero-section-text {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.hero-section-text h4 {
+  padding: 0.5rem 0;
+  font-size: 2.7rem;
+}
+.hero-section-text h3 {
+  padding: 0.5rem 0;
+  font-size: 3rem;
+}
+.hero-section-text h1 {
+  padding: 0.5rem 0;
+  font-size: 4rem;
+}
+.hero-section-text p {
+  padding: 0.5rem 0;
+  font-size: 2rem;
+}
+.hero-section-text p span {
+  color: var(--primary-para-color);
+  font-weight: 600;
+  animation: blink 2s linear infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hero-section-img {
+  padding: 0rem 3rem;
+  width: 70%;
+}
+.hero-section-img img {
+  width: 100%;
+}
+/* Hero Section Css Ends*/
+
+/* Features Section Css Starts*/
+.features-section {
+  max-width: 80%;
+  margin: 0px auto;
+  padding: 1rem;
+}
+.features-box {
+  position: relative;
+}
+.feature-rotate {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  border-bottom: 2px solid rgb(247, 6, 6);
+  box-shadow: -2px -2px 5px 1px rgb(40, 241, 4);
+  border-radius: 50%;
+  animation: feature-rotate 1s linear infinite;
+}
+@keyframes feature-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.feature-rotate:hover {
+  animation: step-end;
+  border: 2px solid rgb(139, 138, 138);
+  border-radius: 1rem;
+  box-shadow: 2px 2px 20px rgb(144, 243, 144);
+}
+.features-box p {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  color: var(--primary-heading-color);
+  text-transform: capitalize;
+}
+/* Features Section Css Ends*/
+
+/* Features Products Section Css Starts*/
+.feature-box-container {
+  max-width: 80%;
+  margin: 0px auto;
+}
+.feature-product-box {
+  padding: 1rem;
+  background-color: var(--feature-box);
+  border: 2px solid rgb(135, 134, 134);
+  text-transform: capitalize;
+  border-radius: 2rem;
+}
+.feature-product-box img {
+  width: 160px;
+  height: 180px;
+  display: flex;
+  margin: 0.5rem auto;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  animation: blink 2s linear infinite, scale 4s linear infinite;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+  0% {
+    transform: scale(1);
+  }
+}
+.feature-product-box p {
+  color: var(--primary-heading-color);
+  font-size: 1.8rem;
+  padding-bottom: 0.2rem;
+}
+.feature-product-box h4 {
+  font-size: 1.9rem;
+  padding-bottom: 0.2rem;
+}
+.star {
+  color: yellow;
+  padding-bottom: 0.2rem;
+  float: left;
+}
+.feature-product-box span {
+  float: right;
+  color: var(--primary-para-color);
+  font-size: 1.6rem;
+  margin: 0 0.3rem;
+}
+.feature-product-box i {
+  float: right;
+  color: var(--icon);
+  font-size: 1.6rem;
+  padding-left: 0.2rem;
+}
+/* Features-Products Section Css Ends*/
+
+/* Banner Section Css Starts*/
+.banner-section {
+  max-width: 80%;
+  padding: 1rem 0;
+  margin: 0px auto;
+  border-radius: 2rem;
+  background-color: var(--banner-bg);
+  border: 2px solid grey;
+}
+.banner-section img {
+  width: 90%;
+  margin: 0px auto;
+  height: 15rem;
+}
+/* Banner Section Css Ends*/
+
+/* Form Section Css Starts*/
+.form-section {
+  max-width: 80%;
+  margin: 0px auto;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-box {
+  width: 50%;
+  margin: 0px auto;
+}
+.in {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid rgb(139, 139, 139);
+  outline: none;
+  border-radius: 1rem;
+  margin: 0.5rem auto;
+  font-size: 1.6rem;
+}
+/* Form Section Css Ends*/
+
+/* Footer Section Css Starts*/
+.footer-section {
+  max-width: 100%;
+  margin: 0px auto;
+  background-color: #dbffa5;
+  gap: 1rem;
+}
+.footer-box {
+  text-align: center;
+  padding: 2rem 0;
+}
+.footer-box h2 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+}
+.footer-box p {
+  font-size: 1.6rem;
+  color: #2e2e2e;
+  padding-bottom: 0.9rem;
+}
+.footer-box i {
+  color: var(--icon);
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+  padding-right: 0.3rem;
+}
+.footer-box p a {
+  font-size: 1.6rem;
+  color: #2e2e2e;
+  padding-bottom: 0.3rem;
+  text-transform: capitalize;
+}
+.footer-box img {
+  width: 100px;
+  padding-bottom: 0.3rem;
+  object-fit: contain;
+}
+.copy {
+  font-size: 1.8rem;
+  padding: 1rem 0rem;
+  background-color: var(--black-text);
+  color: white;
+  text-align: center;
+  height: 4rem;
+}
+.top {
+  width: 100%;
+  position: relative;
+}
+.top-icon {
+  position: fixed;
+  bottom: 6rem;
+  left: 0.3rem;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 0.7rem;
+  color: var(--li-a-hover);
+  background-color: var(--icon);
+}
+.top-icon:hover {
+  color: var(--primary-para-color);
+  font-size: 3rem;
+  background-color: var(--li-active);
+}
+/* Footer Section Css Ends*/
+/* HOME PAGE CSS ENDS HERE..............*/
+
+/* ..............ABOUT PAGE CSS STARTS HERE*/
+
+/* About Banner Css Starts*/
+.about-bg {
+  background-image: url(./home-img/about-banner.png);
+}
+/* About Banner Css Ends*/
+
+/* About Section Css Starts*/
+.who-section {
+  padding: 1rem 0;
+  width: 80%;
+  margin: 0px auto;
+}
+.about-img {
+  width: 100%;
+}
+.about-img img {
+  width: 100%;
+}
+.about-text {
+  width: 100%;
+  padding: 0 1rem;
+}
+.about-text h2 {
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+.about-text p {
+  font-size: 2rem;
+  text-align: justify;
+}
+.about-text marquee {
+  background-color: black;
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  margin: 0.4rem 0;
+  border-radius: 1rem;
+}
+/* About Section Css Ends*/
+
+/* About Video Section Css Starts*/
+.download-box {
+  max-width: 50%;
+  margin: 0 auto;
+}
+.download-box video {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 2rem;
+}
+/* About Video Section Css Ends*/
+/* ABOUT PAGE CSS ENDS HERE..............*/
+
+/* ..............SHOP PAGE CSS STARTS HERE*/
+.shop-bg {
+  background-image: url(./home-img/shop-banner.jpg);
+}
+.button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+#box2,
+#box3,
+#box4,
+#box5 {
+  display: none;
+}
+/* ........Shop Single Product Page CSS Starts */
+.product-details {
+  max-width: 80%;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.img-section {
+  width: 100%;
+  height: 100%;
+}
+
+#big-img {
+  width: 100%;
+  height: 28rem;
+  object-fit: contain;
+  border-radius: 1rem;
+  border: 2px solid rgb(161, 160, 160);
+  background-color: var(--feature-box);
+  animation: blink 2s linear infinite;
+  border-radius: 1rem;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-img {
+  flex-basis: 24%;
+  background-color: var(--feature-box);
+  margin-top: 2rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(161, 160, 160);
+  animation: blink 2s linear infinite;
+  border-radius: 1rem;
+}
+
+.small-img img {
+  width: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.details-section {
+  text-transform: capitalize;
+}
+
+.details-section h4 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  padding: 1rem 0;
+}
+
+.details-section h2 {
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+  padding: 1rem 0;
+}
+
+.details-section h3 {
+  color: red;
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  padding: 1rem 0;
+}
+
+.details-section select {
+  color: red;
+  border: 2px solid rgba(0, 0, 0, 0.333);
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--feature-box);
+  text-transform: capitalize;
+  outline: none;
+}
+
+.details-section option {
+  color: red;
+  font-size: 1.8rem;
+  text-align: center;
+  background-color: var(--feature-box);
+  text-transform: uppercase;
+}
+
+.details-section input {
+  width: 4rem;
+  padding: 0.5rem 0.4rem;
+  font-size: 1.8rem;
+  border: 2px solid rgba(0, 0, 0, 0.333);
+  outline: none;
+  text-align: center;
+}
+
+.details-section button {
+  display: block;
+}
+
+.details-section p {
+  display: block;
+  text-align: justify;
+  font-size: 1.7rem;
+}
+.shop-cut-icon {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  color: var(--black-text);
+  font-size: 3rem;
+}
+.shop-cut-icon:hover {
+  color: red;
+}
+/* Shop Single Product Page CSS Ends............ */
+/* SHOP PAGE CSS ENDS HERE..............*/
+
+/* ..............BLOG PAGE CSS STARTS HERE*/
+
+.blog-bg {
+  background-image: url(./home-img/blog-banner.jpg);
+}
+.feed-section {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.blog-img {
+  width: 80%;
+  height: 20rem;
+  background-color: #d2fae1;
+  border: 2px solid rgb(142, 142, 142);
+  border-radius: 2rem;
+}
+.blog-img img {
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  object-fit: contain;
+}
+.blog-text h4 {
+  font-size: 2rem;
+  color: var(--primary-para-color);
+  text-align: center;
+  animation: blink 2s infinite linear;
+}
+/* BLOG PAGE CSS ENDS HERE..............*/
+
+/* ..............CONTACT PAGE CSS STARTS HERE*/
+.contact-bg {
+  background-image: url(./home-img/contact-banner.jpg);
+}
+.contact-section {
+  max-width: 80%;
+  margin: 0px auto;
+}
+.contact-section-text {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.contact-section-text h3 {
+  padding: 0.5rem 0;
+  font-size: 2rem;
+}
+.contact-section-text h4 {
+  padding: 0.5rem 0;
+  font-size: 2.2rem;
+}
+.contact-section-text h2 {
+  padding: 0.5rem 0;
+  font-size: 2.8rem;
+  color: red;
+}
+.contact-section-text p {
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  color: rgb(54, 54, 54);
+}
+.contact-section-text p i {
+  padding: 0 0.5rem;
+  font-size: 1.8rem;
+  color: var(--icon);
+}
+.contact-section-text p a {
+  padding: 0 0.5rem;
+  color: rgb(54, 54, 54);
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* CONTACT PAGE CSS ENDS HERE..............*/
+.cart-bg {
+  background-image: url(./home-img/about-banner.png);
+}
+.cart-section {
+  max-width: 80%;
+  margin: 0rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cart-section img {
+  width: 30%;
+  object-fit: contain;
+}
