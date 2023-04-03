@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta data informaions -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shopping Website For Practice" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript responsive shoping Website"
+    />
+    <meta name="author" content="Shubham Joshi" />
+    <!-- CSS STYLE SHEET FILE ADDED -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- CSS MEDIA QUARY FILE ADDED -->
+    <link rel="stylesheet" href="./responsive.css" />
+    <!-- FONT AWESOME CDN LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- Animation Effect CSS link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>E-Comm Website By Shubham</title>
+  </head>
+
+  <body>
+    <!-- Header Section Starts -->
+    <header class="header">
+      <!-- Header Section logo -->
+      <section class="logo">
+        <h1>
+          <a href="./index.html"> <span>E</span><span>Comm</span></a>
+        </h1>
+      </section>
+      <!-- Header Section navbar -->
+      <nav class="nav">
+        <ul class="nav-ul" id="nav">
+          <li class="nav-li"><a href="index.html">Home</a></li>
+          <li class="nav-li"><a class="active" href="about.html">about</a></li>
+          <li class="nav-li"><a href="shop.html">shop</a></li>
+          <li class="nav-li"><a href="blog.html">blog</a></li>
+          <li class="nav-li"><a href="contact.html">contact</a></li>
+          <li class="nav-li">
+            <a href="cart.html" class="bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- hembergur menu -->
+      <section class="mobile-bar-menu">
+        <i class="fa-solid fa-bars menu-icon" onclick="show()"></i>
+      </section>
+    </header>
+    <!-- Header Section Ends -->
+
+    <!-- About Section banner Starts -->
+    <main class="container about-bg bg-img-container">
+      <div class="about-container">
+        <h2 class="primary-heading"># know us</h2>
+        <p class="primary-para">we are providing top brands</p>
+      </div>
+    </main>
+    <!-- About Section banner Ends -->
+
+    <!-- Who are we Section Starts -->
+    <section class="container">
+      <section class="who-section grid grid-two-columns section">
+        <div class="about-img"  data-aos="fade-right">
+          <img src="home-img/women.jpg" alt="about page image" loading="lazy"/>
+        </div>
+        <div class="about-text"  data-aos="fade-left">
+          <h2 class="primary-heading">who we are??</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            est, natus eligendi, aspernatur repudiandae beatae nihil eos
+            laudantium at quia non. Ipsum aliquid expedita perferendis hic quasi
+            atque nostrum repellat dolore quos pariatur, fuga voluptatibus?
+            Quidem consectetur architecto repellat quod, pariatur soluta iusto
+            natus rerum dolorem, laboriosam exercitationem delectus debitis
+            labore illum id neque odio maxime blanditiis deleniti atque quisquam
+            similique reiciendis velit libero. In, dolores quos, quae, neque
+            eveniet iste culpa adipisci perferendis voluptas debitis
+            perspiciatis consequuntur.
+          </p>
+          <marquee>Visit us for get more about products</marquee>
+        </div>
+      </section>
+    </section>
+    <!-- Who are we  Section Ends -->
+
+    <!-- Video Section Starts -->
+    <section class="container">
+      <section class="download-box section">
+        <h1 class="primary-heading">Our shoping mall</h1>
+        <video autoplay muted loop src="./home-img/video.mp4" data-aos="fade-left"></video>
+      </section>
+    </section>
+    <!-- Video Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <footer>
+      <section class="footer-section grid grid-four-columns">
+        <div class="footer-box" data-aos="fade-right">
+          <h2>contact</h2>
+          <p>
+            <i class="fa-solid fa-location-pin"></i>
+            1 Street,New York,USA
+          </p>
+          <p>
+            <i class="fa-regular fa-envelope"></i
+            ><a href="mail:info0@gmail.com">info@shubham.com</a>
+          </p>
+          <p>
+            <i class="fa-sharp fa-solid fa-phone"></i
+            ><a href="tel: +91 987 654 3210">+91 7505407218</a>
+          </p>
+          <h2>follow us</h2>
+          <a href="http://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="http://www.twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="http://www.youtube.com" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="http://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <div class="footer-box" data-aos="fade-down">
+          <h2>About</h2>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i
+            ><a href="./about.html">About us</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i
+            ><a href="#">Delivery information</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i
+            ><a href="#">privacy policy</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i
+            ><a href="#">terms & condition</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i
+            ><a href="./contact.html">contact us</a>
+          </p>
+        </div>
+        <div class="footer-box" data-aos="fade-top">
+          <h2>My Account</h2>
+
+          <p><i class="fa-solid fa-arrow-right"></i><a href="#">sign in</a></p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i><a href="#">view cart</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i><a href="#">my wishlist</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i
+            ><a href="#">track my order</a>
+          </p>
+          <p><i class="fa-solid fa-arrow-right"></i><a href="#">Help</a></p>
+        </div>
+        <div class="footer-box" data-aos="fade-left">
+          <h2>install app</h2>
+          <p>from app store & google play</p>
+          <img
+            src="./home-img/google-play-icon.svg"
+            alt="footer-box"
+            loading="lazy"
+          />
+          <img src="./home-img/ios_app_icon.svg" alt="" />
+        </div>
+      </section>
+      <section class="copy">
+        &copy; 2023 Shubham joshi -all rights are reserved
+      </section>
+    </footer>
+    <!-- Footer Section Ends -->
+    <!-- Top icons -->
+    <div class="top" onclick="scrollToTop()">
+      <i class="fa-solid fa-up-long top-icon"></i>
+    </div>
+
+    <!-- Animation effect -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 1000,
+      });
+    </script>
+    <!-- script file added -->
+    <script src="./script.js"></script>
+  </body>
+</html>
