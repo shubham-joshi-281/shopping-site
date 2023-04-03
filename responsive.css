@@ -1,0 +1,305 @@
+/* Media Quary For 1195px Devices */
+@media only screen and (max-width: 1199px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* Media Quary For 999px Devices */
+@media only screen and (max-width: 999px) {
+  html {
+    font-size: 55%;
+  }
+  /* ...............HOME PAGE CSS STARTS HERE.*/
+  /* Header Css Starts */
+  .header {
+    width: 100%;
+    height: 6.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .nav-ul {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 6.5rem;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: all .5s linear;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    pointer-events: none;
+  }
+  .show.nav-ul {
+    transform: translate(0%);
+    opacity: 1;
+    z-index: 999;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .menu-icon {
+    display: block;
+    color: #4dbf00;
+    font-size: 4rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0rem;
+    padding: 1.2rem 1rem;
+    right: 3rem;
+  }
+  .show.menu-icon {
+    display: none;
+  }
+  .show.menu-icon {
+    display: block;
+  }
+  /* Header Css Ends */
+
+  /* Hero Section Css Starts */
+  .hero-section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .bg-img-container {
+    margin: 8rem 0rem 0rem 0rem;
+
+  }
+  /* Hero Section Css Ends */
+
+  /* Resuable Section Css Starts */
+  .section {
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  /* Resuable Section Css Ends */
+
+  /* Form section Css Starts*/
+  .input-box {
+    width: 80%;
+  }
+  /* Form section Css Ends*/
+
+  /* Footer Section Css Starts */
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+/* Media Quary For 799px Devices */
+@media only screen and (max-width: 799px) {
+  html {
+    font-size: 50%;
+  }
+  /* ...............HOME PAGE CSS STARTS HERE.*/
+  /* Header Css Starts */
+  .header {
+    width: 100%;
+    height: 6.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .nav-ul {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 6.5rem;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: all .5s linear;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    pointer-events: none;
+  }
+  .show.nav-ul {
+    transform: translate(0%);
+    opacity: 1;
+    z-index: 999;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .menu-icon {
+    display: block;
+    color: #4dbf00;
+    font-size: 4rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0rem;
+    padding: 1.2rem 1rem;
+    right: 3rem;
+  }
+  .show.menu-icon {
+    display: none;
+  }
+  .show.menu-icon {
+    display: block;
+  }
+  /* Header Css Ends */
+
+  /* Hero Section Css Starts */
+  .hero-section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Hero Section Css Ends */
+  .bg-img-container {
+    margin: 9rem 0rem 0rem 0rem;
+  }
+  /* Resuable Section Css Starts */
+  .section {
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Resuable Section Css Ends */
+
+  /* Form section Css Starts*/
+  .input-box {
+    width: 80%;
+  }
+  /* Form section Css Ends*/
+
+  /* Footer Section Css Starts */
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  /* Footer Section Css Ends */
+  /* HOME PAGE CSS ENDS HERE..............*/
+}
+/* Media Quary For 599px Devices */
+@media only screen and (max-width: 599px) {
+  html {
+    font-size: 45%;
+  }
+  /* ...............HOME PAGE CSS STARTS HERE.*/
+  /* Header Css Starts */
+  .header {
+    width: 100%;
+    height: 6.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .nav-ul {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 6.5rem;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: all .5s linear;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    pointer-events: none;
+  }
+  .show.nav-ul {
+    transform: translate(0%);
+    opacity: 1;
+    z-index: 999;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .menu-icon {
+    display: block;
+    height: 100%;
+    color: #4dbf00;
+    font-size: 4rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0rem;
+    padding: 1.2rem 1rem;
+    right: 3rem;
+  }
+  .show.menu-icon {
+    display: none;
+  }
+  .show.menu-icon {
+    display: block;
+  }
+  /* Header Css Ends */
+
+  /* Hero Section Css Starts */
+  .hero-section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Hero Section Css Ends */
+
+  /* Resuable Section Css Starts */
+  .section {
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Resuable Section Css Ends */
+  .bg-img-container {
+    margin: 10rem 0rem 0rem 0rem;
+
+  }
+  /* Form section Css Starts*/
+  .input-box {
+    width: 80%;
+  }
+  /* Form section Css Ends*/
+
+  /* Footer Section Css Starts */
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
