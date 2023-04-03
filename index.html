@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta data informaions -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shopping Website For Practice" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript responsive shopping Website"
+    />
+    <meta name="author" content="Shubham Joshi" />
+    <!-- CSS STYLE SHEET FILE ADDED -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- CSS MEDIA QUARY FILE ADDED -->
+    <link rel="stylesheet" href="./responsive.css" />
+    <!-- FONT AWESOME CDN LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- Animation Effect CSS link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>E-Comm Website By Shubham</title>
+  </head>
+
+  <body>
+    <!-- Header Section Starts -->
+    <header class="header">
+      <!-- Header Section logo -->
+      <section class="logo">
+        <h1>
+          <a href="./index.html"> <span>E</span><span>Comm</span></a>
+        </h1>
+      </section>
+      <!-- Header Section navbar -->
+      <nav class="nav">
+        <ul class="nav-ul" id="nav">
+          <li class="nav-li"><a class="active" href="index.html">Home</a></li>
+          <li class="nav-li"><a href="about.html">about</a></li>
+          <li class="nav-li"><a href="shop.html">shop</a></li>
+          <li class="nav-li"><a href="blog.html">blog</a></li>
+          <li class="nav-li"><a href="contact.html">contact</a></li>
+          <li class="nav-li">
+            <a href="cart.html" class="bag"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- hembergur menu -->
+      <section class="mobile-bar-menu">
+        <i class="fa-solid fa-bars menu-icon" onclick="show()"></i>
+      </section>
+    </header>
+    <!-- Header Section Ends -->
+
+    <!-- Hero Section Starts -->
+    <main class="container">
+      <section class="hero-section grid grid-two-columns">
+        <section class="hero-section-text" data-aos="fade-right">
+          <h4>Trade-in-offer</h4>
+          <h3>Super value deals</h3>
+          <h1>on all product</h1>
+          <p>
+            save more with coupons <br />
+            & up to <span>70% off</span>
+          </p>
+          <button class="btn">
+            <a href="./shop.html">Shop now</a>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </section>
+        <section class="hero-section-img" data-aos="fade-left">
+          <img src="./home-img/hero.png" alt="" />
+        </section>
+      </section>
+    </main>
+    <!-- Hero Section Ends -->
+
+    <!-- Features Section Starts -->
+    <section class="container" data-aos="fade-top">
+      <section class="features-section grid grid-five-columns section">
+        <div class="features-box">
+          <div class="feature-rotate"></div>
+          <img src="./home-img/f1.png" alt="features-images" loading="lazy" />
+          <p>Free Shipping</p>
+        </div>
+        <div class="features-box">
+          <div class="feature-rotate"></div>
+
+          <img src="./home-img/f2.png" alt="features-images" loading="lazy" />
+          <p>Online order</p>
+        </div>
+        <div class="features-box">
+          <div class="feature-rotate"></div>
+
+          <img src="./home-img/f3.png" alt="features-images" loading="lazy" />
+          <p>Save money</p>
+        </div>
+        <div class="features-box">
+          <div class="feature-rotate"></div>
+
+          <img src="./home-img/f4.png" alt="features-images" loading="lazy" />
+          <p>Promotion</p>
+        </div>
+        <div class="features-box">
+          <div class="feature-rotate"></div>
+
+          <img src="./home-img/f5.png" alt="features-images" loading="lazy" />
+          <p>Happy sell</p>
+        </div>
+      </section>
+    </section>
+    <!-- Features Section Ends -->
+
+    <!-- Product Features Section Starts -->
+    <section class="container">
+      <h2 class="primary-heading">features product</h2>
+      <p class="primary-para">summer collection of new design</p>
+      <div
+        class="feature-box-container grid grid-four-columns section"
+        data-aos="fade-dowm"
+      >
+        <div class="feature-product-box">
+          <img src="./home-img/img1.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>Boys t-shirt</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$168</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img9.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>girls Top</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$178</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img2.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>Boys t-shirt</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$78</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img10.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>girls top</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$78</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img3.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>Boys t-shirt</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$78</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img11.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>girls top</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$78</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img4.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>Boys t-shirt</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price"
+            >$78 &nbsp; <i class="fa-solid fa-bag-shopping icon"></i
+          ></span>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img12.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>girls top</h4>
+
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$78</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Product Features Section Ends -->
+
+    <!-- Banner Section Starts -->
+    <section class="container" data-aos="fade-right">
+      <section class="banner-section grid grid-two-columns section">
+        <img src="./home-img/banner2.webp" alt="banner" loading="lazy" />
+        <img src="./home-img/banner1.jpg" alt="banner" loading="lazy" />
+      </section>
+    </section>
+    <!-- Banner Section Ends -->
+
+    <!-- New Arival Section Starts -->
+    <section class="container">
+      <h2 class="primary-heading">New arrivals</h2>
+      <p class="primary-para">summer collection of new morden design</p>
+      <div
+        class="feature-box-container grid grid-four-columns section"
+        data-aos="fade-down"
+      >
+        <div class="feature-product-box">
+          <img src="./home-img/img5.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>Boys t-shirt</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$168</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img13.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>girls Top</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$178</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img6.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>Boys t-shirt</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$78</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img14.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>girls top</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$78</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img7.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>Boys t-shirt</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$78</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img15.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>girls top</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$78</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img8.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>Boys t-shirt</h4>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price"
+            >$78 &nbsp; <i class="fa-solid fa-bag-shopping icon"></i
+          ></span>
+        </div>
+        <div class="feature-product-box">
+          <img src="./home-img/img16.png" alt="product-images" loading="lazy" />
+          <p>adidas</p>
+          <h4>girls top</h4>
+
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="price">$78</span>
+          <i class="fa-solid fa-bag-shopping icon"></i>
+        </div>
+      </div>
+    </section>
+    <!-- New Arival Section Ends -->
+
+    <!-- Newssleter Section Starts -->
+    <section class="container" data-aos="fade-top">
+      <h2 class="primary-heading">sign up for newssletters</h2>
+      <p class="primary-para">
+        get email update about our latest shop and <span>special offers</span>
+      </p>
+      <form
+        action="https://formspree.io/f/mjvdezkp"
+        method="POST"
+        class="form-section"
+      >
+        <div class="input-box">
+          <label for="username"></label>
+          <input
+            type="text"
+            class="in"
+            placeholder="Enter your name."
+            required
+            name="username"
+            autocomplete="true"
+          />
+        </div>
+        <div class="input-box">
+          <label for="useremail"></label>
+          <input
+            type="email"
+            class="in"
+            placeholder="Enter your Email."
+            name="useremail"
+            required
+            autocomplete="true"
+          />
+        </div>
+        <input type="submit" value="Register" name="submit" class="btn" />
+      </form>
+    </section>
+    <!-- Newssleter Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <footer>
+      <section class="footer-section grid grid-four-columns">
+        <div class="footer-box" data-aos="fade-right">
+          <h2>contact</h2>
+          <p>
+            <i class="fa-solid fa-location-pin"></i>
+            1 Street,New York,USA
+          </p>
+          <p>
+            <i class="fa-regular fa-envelope"></i
+            ><a href="mail:info0@gmail.com">info@shubham.com</a>
+          </p>
+          <p>
+            <i class="fa-sharp fa-solid fa-phone"></i
+            ><a href="tel: +91 987 654 3210">+91 7505407218</a>
+          </p>
+          <h2>follow us</h2>
+          <a href="http://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="http://www.twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="http://www.youtube.com" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="http://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <div class="footer-box" data-aos="fade-down">
+          <h2>About</h2>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i
+            ><a href="./about.html">About us</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i
+            ><a href="#">Delivery information</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i
+            ><a href="#">privacy policy</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i
+            ><a href="#">terms & condition</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i
+            ><a href="./contact.html">contact us</a>
+          </p>
+        </div>
+        <div class="footer-box" data-aos="fade-top">
+          <h2>My Account</h2>
+
+          <p><i class="fa-solid fa-arrow-right"></i><a href="#">sign in</a></p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i><a href="#">view cart</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i><a href="#">my wishlist</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-arrow-right"></i
+            ><a href="#">track my order</a>
+          </p>
+          <p><i class="fa-solid fa-arrow-right"></i><a href="#">Help</a></p>
+        </div>
+        <div class="footer-box" data-aos="fade-left">
+          <h2>install app</h2>
+          <p>from app store & google play</p>
+          <img
+            src="./home-img/google-play-icon.svg"
+            alt="footer-box"
+            loading="lazy"
+          />
+          <img src="./home-img/ios_app_icon.svg" alt="" />
+        </div>
+      </section>
+      <section class="copy">
+        &copy; 2023 Shubham joshi -all rights are reserved
+      </section>
+    </footer>
+    <!-- Footer Section Ends -->
+
+    <!-- Top icons -->
+    <div class="top" onclick="scrollToTop()">
+      <i class="fa-solid fa-up-long top-icon"></i>
+    </div>
+
+    <!-- Animation effect -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 1000,
+      });
+    </script>
+    <!-- script file added -->
+    <script src="./script.js"></script>
+  </body>
+</html>
